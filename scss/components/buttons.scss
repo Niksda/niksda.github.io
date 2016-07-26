@@ -1,0 +1,14 @@
+.btn {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background: $prim_color;
+    color: $sec_color;
+    text-decoration: none;
+    display: block;
+    margin: 1rem auto;
+}
+
+.btn:hover{
+  background: $sec_color;
+  color:$prim_color;
+}

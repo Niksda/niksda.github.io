@@ -1,0 +1,81 @@
+/* Hi, Lorenz – sorry dass das hier so unaufgeräumt und unfertig daher kommt. Habe es zeitlich leider doch nicht geschafft. */
+
+@import "helpers/reset.scss";
+@import "helpers/variables.scss";
+@import "layout/grid.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+@import "components/buttons.scss";
+
+body{
+    font-family: $font-stack;
+    color: $sec_color;
+    background-color: $sec_color;
+}
+.work__nav {
+    display: block;
+    text-align: center;
+}
+.work__nav__item {
+    display: inline-block;
+}
+.work__nav__item__link {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.work__nav__item__link:hover {
+    border: 0.05rem solid $sec_color;
+    padding: 0.95rem;
+}
+.portfolio__item:nth-child(n+13) {
+    display: none;
+}
+.mail__form {
+    display: inline-block;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width:34em) {
+  .mail__form {
+    padding: 1rem 1rem 0 1rem;;
+  }
+}
+@media screen and (min-width:48em) {
+  .mail__form {
+    padding: 1rem 2rem 0 2rem;;
+  }
+}
+@media screen and (min-width:62em) {
+  .mail__form {
+    padding: 1rem 10rem 0 10rem;
+  }
+}
+@media screen and (min-width:76em) {
+  .mail__form {
+    padding: 1rem 20rem 0 20rem;
+  }
+}
+
+
+.mail__form input {
+    font-family: $font-stack;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 0;
+    border-radius: 0.75rem;
+    outline: 0;
+}
+.mail__form textarea {
+    font-family: $font-stack;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 0;
+    border-radius: 0.75rem;
+    outline: 0;
+}
